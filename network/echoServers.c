@@ -92,7 +92,8 @@ void add_client(int connfd,pool *p){
         }
 
         if (i == FD_SETSIZE) /* Couldn't find an empty slot */
-            app_error("add client error: Too many clients");
+            printf("None");
+//            app_error("add client error: Too many clients");
     }
 }
 

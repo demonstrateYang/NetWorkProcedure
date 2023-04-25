@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include <bootstrap.h>
+
+
 
 int main() {
-    printf("Hello, World!\n");
+    printf("He");
     return 0;
 }

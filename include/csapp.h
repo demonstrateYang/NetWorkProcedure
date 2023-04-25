@@ -28,7 +28,6 @@ int munmap(void *start, size_t length);
 
 
 /*  System IO */
-
 typedef struct {
     int rio_fd;         //Descriptor for this internal buf
     int rio_cnt;        //Unread bytes in internal buf
