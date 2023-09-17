@@ -57,6 +57,7 @@ int main(int argc,char **argv){
 }
 
 void init_pool(int listenfd,pool *p){
+
     /* Initially,there are no connected descriptors */
     int i;
     p->maxi = -1;
@@ -68,13 +69,16 @@ void init_pool(int listenfd,pool *p){
     p->maxfd = listenfd;
     FD_ZERO(&p->read_set);
     FD_SET(listenfd,&p->read_set);
+
 }
 
 
 void add_client(int connfd,pool *p){
+
     int i;
     p->nready--;
-    for (int i  = 0; i < FD_SETSIZE; i++) {
+    for ( i  = 0; i < FD_SETSIZE; i++) {
+
         if (p->clientfd[i] < 0){
             /* Add connected descriptor to the pool */
             p->clientfd[i] = connfd;

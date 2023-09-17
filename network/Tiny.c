@@ -1,13 +1,14 @@
 //
 // Created by 杨君鹏 on 2022/5/26.
 //
-#include <sys/stat.h>
-#include <fcntl.h>
+
 #include <sys/types.h>
 #include "../include/csapp.h"
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 /*
  *  tiny.c - A simple,iterative HTTP/1.0 Web server that uses the
  *  GET method to serve static and dynamic content
@@ -126,6 +127,7 @@ void read_requesthdrs(rio_t *rp){
 }
 
 int parse_uri(char *uri,char *filename,char *cgiargs){
+
     char *ptr;
 
     if(!strstr(uri,"cgi-bin")){     /* Static content */
@@ -135,7 +137,8 @@ int parse_uri(char *uri,char *filename,char *cgiargs){
         if (uri[strlen(uri-1)] == '/')
             strcat(filename,"home.html");
         return -1;
-    }else{  /* Dynamic content */
+    }else{
+        /* Dynamic content */
         ptr = index(uri,'?');
         if (ptr){
             strcpy(cgiargs,ptr+1);

@@ -72,4 +72,9 @@
 #define ALLOC_CHUNKHDRSZ	sizeof(struct AllocChunkData)
 
 
+/*
+ * Fast MOD arithmetic, assuming that y is a power of 2 !
+ */
+#define MOD(x,y)			   ((x) & ((y)-1))
+
 #endif //NETWORKPROGRAMINGINC_MACRO_H

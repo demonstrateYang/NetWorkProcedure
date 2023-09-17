@@ -18,7 +18,7 @@ int main(int argc,char **argv){
     }
     listenfd = open_listenfd(argv[1]);
 
-    FD_ZERO(&read_set);         /* Clear read set */
+    FD_ZERO(&read_set);                 /* Clear read set */
     FD_SET(STDIN_FILENO, &read_set);    /* Add stdin to read set */
     FD_SET(listenfd, &read_set);        /* Add listenfd to read set */
 
