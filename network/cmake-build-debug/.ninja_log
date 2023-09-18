@@ -1,0 +1,6 @@
+# ninja log v5
+1	79	1683624573788447729	CMakeFiles/adder.dir/adder.c.o	81c60128fc79e32f
+0	41	1682413319330270429	CMakeFiles/adder.dir/echoServers.c.o	ff5e78eb84c7b1c3
+80	166	1683624573875625744	adder	36f105d78baad78f
+0	37	1682413319326329354	CMakeFiles/adder.dir/multipleIO.c.o	2169247ffb7762f6
+0	80	1683624573789918390	CMakeFiles/adder.dir/csapp.c.o	a9edcba05fc37c40
