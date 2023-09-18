@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/yangjunpeng/network-programing
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/yangjunpeng/CLionProjects/NetworkProcedure
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/yangjunpeng/network-programing/cmake-build-debug
+-- Build files have been written to: /Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug

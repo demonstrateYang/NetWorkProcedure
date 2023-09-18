@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: NetworkProgramingInC
+# Project: NetworkProcedure
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/yangjunpeng/network-programing/cmake-build-debug/
+cmake_ninja_workdir = /Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/yangjunpeng/network-programing/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yangjunpeng/network-programing -B/Users/yangjunpeng/network-programing/cmake-build-debug
+  COMMAND = cd /Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yangjunpeng/CLionProjects/NetworkProcedure -B/Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,23 +57,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/yangjunpeng/network-programing/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for test
-
-build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/yangjunpeng/network-programing/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build test: phony CMakeFiles/test.util
 
 # =============================================================================
 # Object build statements for EXECUTABLE target main
@@ -84,15 +72,15 @@ build test: phony CMakeFiles/test.util
 
 build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
-build CMakeFiles/main.dir/network/echoClient.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/network-programing/network/echoClient.c || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/network/echoClient.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu99
+build CMakeFiles/main.dir/network/Client/echoClient.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/CLionProjects/NetworkProcedure/network/Client/echoClient.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/network/Client/echoClient.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/network
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/network/Client
 
-build CMakeFiles/main.dir/network/csapp.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/network-programing/network/csapp.c || cmake_object_order_depends_target_main
+build CMakeFiles/main.dir/network/csapp.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/CLionProjects/NetworkProcedure/network/csapp.c || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/network/csapp.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu99
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/network
 
@@ -104,8 +92,8 @@ build CMakeFiles/main.dir/network/csapp.c.o: C_COMPILER__main_Debug /Users/yangj
 #############################################
 # Link the executable main
 
-build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/network/echoClient.c.o CMakeFiles/main.dir/network/csapp.c.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/network/Client/echoClient.c.o CMakeFiles/main.dir/network/csapp.c.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -121,7 +109,7 @@ build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/network/echoClie
 # =============================================================================
 
 #############################################
-# Folder: /Users/yangjunpeng/network-programing/cmake-build-debug
+# Folder: /Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug
 
 build all: phony main
 

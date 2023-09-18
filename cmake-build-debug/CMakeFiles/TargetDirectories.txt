@@ -1,4 +1,3 @@
-/Users/yangjunpeng/network-programing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/yangjunpeng/network-programing/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/yangjunpeng/network-programing/cmake-build-debug/CMakeFiles/test.dir
-/Users/yangjunpeng/network-programing/cmake-build-debug/CMakeFiles/main.dir
+/Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yangjunpeng/CLionProjects/NetworkProcedure/cmake-build-debug/CMakeFiles/main.dir
