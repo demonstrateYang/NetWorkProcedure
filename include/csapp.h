@@ -18,7 +18,8 @@
 #include <string.h>
 #include <sys/socket.h>     //socket
 #include <netdb.h>          //getnameinfo
-
+#include <pthread.h>
+#include <semaphore.h>
 
 extern char **environ;
 
@@ -57,4 +58,11 @@ int open_clientfd(char *hostname,char *port);
 int open_listenfd(char *port);
 void echo(int connfd);
 extern void mem_set();
+
+
+/* Semaphore */
+void P(sem_t *s);               /* Wrapper function for sem_wait */
+void V(sem_t *s);               /* Wrapper function for sem_post */
+
+
 #endif //NETWORKPROGRAMINGINC_CSAPP_H

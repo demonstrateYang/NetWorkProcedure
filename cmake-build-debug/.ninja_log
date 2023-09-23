@@ -1,17 +1,8 @@
 # ninja log v5
-3	55	1695017160202706387	CMakeFiles/main.dir/network/echoClient.c.o	c2a2b1af5a0290be
-56	117	1695017160264835875	main	6e50965e3511eba1
-45	83	1673969359977227200	NetworkProgramingInC	9853416176214799
-78	150	1676385103864735836	echoClient	b8f8857d3241387b
-0	66	1695025709733195886	build.ninja	aeede207a9bd2cca
-1	32	1676298317048433468	echoServer.c.c	f2e1983048405115
-47	85	1676295515139295043	main.c	58993131096c7975
-5	67	1695016163604492996	CMakeFiles/main.dir/network/csapp.c.o	6c9714814c3837ba
-95	137	1676431272400394697	Tiny	5da705b90d4b12b9
-2	78	1695025738529778240	CMakeFiles/main.dir/network/Client/echoClient.c.o	b4330276acb6d6ca
-4	83	1695025738534852887	CMakeFiles/main.dir/network/csapp.c.o	ffa3f5fae9d4ba02
-83	155	1695025738607362305	main	101126595ce9809c
-2	51	1695025790363495041	CMakeFiles/main.dir/network/Client/echoClient.c.o	b4330276acb6d6ca
-51	108	1695025790422060019	main	101126595ce9809c
-2	50	1695025803011568930	CMakeFiles/main.dir/network/Client/echoClient.c.o	b4330276acb6d6ca
-50	105	1695025803067154642	main	101126595ce9809c
+0	93	1695105455906438595	CMakeFiles/main.dir/network/Client/echoClient.c.o	cef86ea001075df
+0	93	1695105455906624510	CMakeFiles/main.dir/network/Server/echoServerByThread.c.o	667af0b1b2e5519f
+1	90	1695105455901726870	CMakeFiles/main.dir/network/ThreadSharing/sharing.c.o	10d01db889a6f6c4
+0	94	1695105455908953456	CMakeFiles/main.dir/network/Server/echoServerByMultiplexing.c.o	8b34e1d58ff1ecdf
+0	94	1695105455907084674	CMakeFiles/main.dir/network/Server/echoServerByFork.c.o	e8f6e8f7d39bef54
+1	91	1695105551969211602	CMakeFiles/main.dir/network/csapp.c.o	78cce2ebd8047f4a
+1	40	1695105580125751790	main	77d13afbee73126b

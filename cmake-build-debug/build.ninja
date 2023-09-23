@@ -74,15 +74,21 @@ build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/network/Client/echoClient.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/CLionProjects/NetworkProcedure/network/Client/echoClient.c || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/network/Client/echoClient.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -std=gnu99
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/network/Client
 
 build CMakeFiles/main.dir/network/csapp.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/CLionProjects/NetworkProcedure/network/csapp.c || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/network/csapp.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -std=gnu99
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/network
+
+build CMakeFiles/main.dir/network/buggy/badcnt.c.o: C_COMPILER__main_Debug /Users/yangjunpeng/CLionProjects/NetworkProcedure/network/buggy/badcnt.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/network/buggy/badcnt.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -std=gnu99
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/network/buggy
 
 
 # =============================================================================
@@ -92,8 +98,8 @@ build CMakeFiles/main.dir/network/csapp.c.o: C_COMPILER__main_Debug /Users/yangj
 #############################################
 # Link the executable main
 
-build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/network/Client/echoClient.c.o CMakeFiles/main.dir/network/csapp.c.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/network/Client/echoClient.c.o CMakeFiles/main.dir/network/csapp.c.o CMakeFiles/main.dir/network/buggy/badcnt.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :

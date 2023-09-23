@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.21)
+
 project(NetworkProcedure C)
 
-#set(CMAKE_C_STANDARD 99)
-set (CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 99)
+#set (CMAKE_CXX_STANDARD 17)
 
 #add_executable(Tiny csapp.h csapp.c Tiny.c )
 #add_executable(echoClient  csapp.h csapp.c  echoClient.c)
@@ -12,6 +13,6 @@ set (CMAKE_CXX_STANDARD 17)
 
 ##Unit test
 #add_executable(main include/csapp.h main.c)
-add_executable(main include/csapp.h network/Client/echoClient.c network/csapp.c)
+add_executable(main include/csapp.h network/Client/echoClient.c network/csapp.c network/buggy/badcnt.c include/sbuf.h network/semaphore/sbuf.c)
 
 
