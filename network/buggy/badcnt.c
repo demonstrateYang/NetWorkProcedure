@@ -2,6 +2,7 @@
 // Created by 杨君鹏 on 2023/9/20.
 //
 #include "../../include/csapp.h"
+#include "../../include/sbuf.h"
 
 void *thread(void *vargp);      /* Thread routine prototype */
 
@@ -31,6 +32,7 @@ int main(int argc,char **argv){
     }else{
         printf("OK cnt=%ld\n",cnt);
     }
+    printf("%s","Hello");
     exit(0);
 }
 
